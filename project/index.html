@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <meta charset="UTF-8">
+    <title>Dukaan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+
+<body>
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/67239/animate.min.css" rel="stylesheet" />
+<div class="body"></div>
+
+<div class="overlay">
+  <div class="ui-panel login-panel animated bounceInDown">
+    <header>
+      <div class="left logo">
+        <a href="#logo"><span>THE DUKAAN </span>DATABASE MANAGER</a>
+      </div>
+
+    </header>
+
+    <footer>
+      <input type="submit" id="customer" value="Customer" onClick="customer()"/>
+      <span><br><br></span>
+      <input type="submit" id="store" value="Store" onClick="store()"/>
+      <span><br><br></span>
+      <input type="submit" id="supplier" value="Supplier" onClick="supplier()"/>
+      <span><br><br></span>
+      <input type="submit" id="store" value="Admin" onClick="admin()"/>
+      <span><br><br></span>
+      <input type="submit" id="supplier" value="Queries" onClick="queries()"/>
+      <span><br></span>
+      <span id="copyright"><br> Copyright © 2022 by Vishwesh, Dev, Hiren & Sahil. All rights reserved.</span>
+      <script>
+        function customer() {
+          window.location.href="customerLogin.html";
+        }
+        function store() {
+          window.location.href="storeLogin.html";
+        }
+        function supplier() {
+          window.location.href="supplierLogin.html";
+        }
+        function admin() {
+          window.location.href="adminLogin.html";
+        }
+        function queries() {
+          window.location.href="queries.html";
+        }
+      </script>
+    </footer>
+  </div>
+</div>
+
+</body>
+</html>

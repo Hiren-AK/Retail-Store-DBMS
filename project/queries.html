@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <meta charset="UTF-8">
+    <title>Dukaan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+
+<body>
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/67239/animate.min.css" rel="stylesheet" />
+<div class="body"></div>
+
+<div class="overlay">
+  <div class="ui-panel login-panel animated bounceInDown">
+    <header>
+      <div class="left logo">
+        <a href="#logo"><span>THE DUKAAN </span>DATABASE MANAGER</a>
+      </div>
+
+    </header>
+
+    <form action="query1.php" method="post">
+      <span><br></span>
+      <input type="submit" id="customer" value="Query 1"/>
+    </form>
+    <form action="query2.php" method="post">
+      <span><br></span>
+      <input type="submit" id="customer" value="Query 2"/>
+    </form>
+    <form action="query3.php" method="post">
+      <span><br></span>
+      <input type="submit" id="customer" value="Query 3"/>
+    </form>
+    <form action="query4.php" method="post">
+      <span><br></span>
+      <input type="submit" id="customer" value="Query 4"/>
+    </form>
+    <span><br></span>
+    <input type="submit" id="return" value="Return Home" onClick="returnHome()"/>
+    <footer>
+      <span id="copyright">Copyright © 2022 by Vishwesh, Dev, Hiren & Sahil. All rights reserved.</span>
+    </footer>
+      <script>
+        function returnHome() {
+          window.location.href="index.html";
+        }
+      </script>
+  </div>
+</div>
+
+</body>
+</html>
